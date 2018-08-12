@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Reem+Kufi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="my-logo d-inline-flex flex-row align-items-center justify-content-center mr-auto">
+                        <img src="images/logo/logo8.png" class="logo-image" alt="My initials SH on a laptop screen">
+                        <h4>Shane<br>Harper</h4>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <!--The pull-right class makes the dropdown menu align right. You'll probably have
+                    to use CSS to right align the individual nav items.-->
+                        <div class="navbar-nav ml-auto pull-right">
+                            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="index.html#about">About</a>
+                            <a class="nav-item nav-link active" href="#">Portfolio</a>
+                            <a class="nav-item nav-link" href="index.html#contact">Contact</a>
+                            <!--You'll prob have to see about doing a smooth scroll option for
+                            whenever you're doing separate pages that link to the home page.-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="intro">
+            <div class="jumbotron">
+                <!-- <img src="images/coverPhoto.jpg" alt="A headshot of Shane and his laptop"
+                title="Shane Harper" class="jumbo-image"> -->
+                <div class="jumbotron-text">
+                    <h1 class="display-4 text-center">Adena Harper, Mary Kay Cosmetics</h1>
+                </div>
+            </div>
+            <!--I want my friend Gaffney to take a better headshot of me-->
+                <div class="container-fluid"> <!--container fluid-->
+                        <p class="text-center">This is my first web development project&#33; My mother, Adena Harper,
+                            wanted a website for her own Mary Kay&reg; unit so she could bring in
+                            new clientele. Since this was my first website, I utilized the beginner
+                            knowledge I had acquired from to create it&#33;</p>
+                        </p>
+                    <article id="case-study-one">
+                        <div class="case-study">
+                            <div>
+                                <img src="images/case-study/laptopandphone.png"
+                                alt="the website as it appears on a smartphone and laptop"
+                                class="img-fluid">
+                                <a class="btn btn-info btn-block my-3"
+                                href="http://www.adenaharper.com" target="_blank">View website&#33;</a>
+                            </div>
+                            <div>
+                                <p>My mother and I discussed the following goals for the website&#58;</p>
+                                <ol>
+                                    <li>Have a colorful theme that matches Mary Kay&reg;.</li>
+                                    <li>Showcase monthly specials on products.</li>
+                                    <li>Let prospective clients request appointments and place orders.</li>
+                                    <li>Post the events for the current month.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+                </div> <!--/ container-fluid-->
+                    <article id="brainstorming">
+                        <div class="container-fluid d-flex flex-column align-items-center">
+                            <div class="case-study my-3">
+                                <h3 class="text-center mt-3">Brainstorming&#33;</h3>
+                                <p>Mom first suggested building the site using GoDaddy's web templates. However,
+                                that would not help me hone my web development skills so I decided to design the site from
+                            HTML and CSS. Click on any of the three photos to see an example.</p>
+                            </div>
+                        </div>
+                        <div class="container-fluid d-flex flex-column align-items-center">
+                                <article id="project-slideshow d-flex flex-column justify-content-center align-items-center">
+                                    <div class="open-modal d-flex flex-row justify-content-center modal-container2">
+                                        <a href="#lightbox"><img src="images/case-study/template1.png" data-toggle="modal" data-slide-to="0"
+                                        class="img-fluid" alt="A template from GoDaddy"></a>
+                                        <a href="#lightbox"><img src="images/case-study/template2.png" data-toggle="modal" data-target="#exampleModal2"
+                                        class="img-fluid" alt="A template from GoDaddy"></a>
+                                        <a href="#lightbox"><img src="images/case-study/template3.png" data-toggle="modal" data-target="#exampleModal3"
+                                        class="img-fluid" alt="A template from GoDaddy"></a>
+                                        <a href="#lightbox"><img src="images/case-study/template4.png" data-toggle="modal" data-target="#exampleModal3"
+                                        class="img-fluid" alt="A template from GoDaddy"></a>
+                                    </div>
+                            </article>
+                        </div>
+                                    <div class="modal fade carousel slide" id="lightbox">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#lightbox" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#lightbox" data-slide-to="1"></li>
+                                                        <li data-target="#lightbox" data-slide-to="2"></li>
+                                                    </ol>
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <img src="http://placehold.it/900x500/777/" alt="First slide">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="http://placehold.it/900x500/666/" alt="Second slide">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="http://placehold.it/900x500/555/" alt="Third slide">
+                                                            <div class="carousel-caption"><p>even with captions...</p></div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <div class="container-fluid d-flex flex-column align-items-center">
+                                <div class="case-study my-3">        
+                                    <p>Based on what I observed in the templates, I knew that I 
+                                        wanted to incorporate a light and appealing color theme 
+                                        as well as easy to navigate for users. Therefore, I wanted 
+                                        to ensure that the page was easy to update for future product 
+                                        specials and events.</p>
+                                    </div>
+                                </div>
+                        </article>
+                <div class="container-fluid d-flex flex-column align-items-center">
+                    <div class="case-study">
+                        <h3 class="text-center mt-3">Customization</h3>
+                        <p>To elaborate on an earlier point, I applied the lessons I learned 
+                            from TreeHouse thus far to build this website. Specifically, 
+                            I utilized HTML5, CSS3, and Bootstrap 4. Therefore, I had to 
+                            heavily rely on those languages to customize the website.</p>
+                        <p>However, I was satisfied in what I was able to accomplish with 
+                            that entry-level skill set. Not only was I able to style and 
+                            organize the page to make it presentable to users, but I also 
+                            added personal customization to make the user experience enjoyable!</p>
+                    </div> <!--/case-study-->
+                    <div class="case-study-two">
+                        <div class="row" style="margin-top: 30px;">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <a href="https://calendly.com/serendipity" target="_blank">
+                                    <article id="request">
+                                        <i class="fa fa-calendar" aria-hidden"true"></i>
+                                        <hr>
+                                        <p>Request an<br>appointment!</p>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <h3 class="text-center">CSS &#34;Button&#34;</h3>
+                                <p>Hover over the buttons to the left and right! These are simple	&#34;buttons&#34; that
+                                    I coded in CSS. When you hover over them, it looks like you're pressing a button,
+                                    which in reality is a link that opens a page in another tab.</p>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <article id="order">
+                                    <a href="https://www.marykay.com/adena" target="_blank">
+                                    <div class="clearfix">
+                                        <ul>
+                                            <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                                            <li><strong><p>Place an<br>order!</p></strong></a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div> <!--/ row-->
+                    </div> <!--/case-study-two-->
+                </div> <!--/container-fluid-->
+                <hr>
+                <div class="container-fluid">
+                    <article id="conclusion">
+                        <h3 class="text-center mt-3">In Conclusion</h3>
+                        <img src="images/case-study/laptopandphone.png" alt="a screenshot of mom's website" class="img-fluid">
+                        <div class="case-study">
+                            <p>Working on this project was an amazing learning experience for me! 
+                            Whether it was finalizing the design, optimizing Bootstrap &amp; CSS to 
+                            customize the site, or ensuring a simple user navigation, I am very 
+                            confident that I have started my web development career on the right foot!</p>
+                            <p class="text-center">Well...that&#39;s enough of me explaining the site! 
+                                <a href="http://www.adenaharper.com" target="_blank">Go check it out yourself!</a></p>
+                        </div>
+                    </article>
+                </div> <!--/container-fluid-->
+                <a class="up-arrow d-flex align-items-center justify-content-center"
+                href="#top">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;Shane Harper, 2018</p>
+            <p><a href="mailto:cdtharper@gmail.com?Subject=Hey%20Shane">cdtharper&#64;gmail.com</a></p>
+            <p>Logo Courtesy of <a href="https://www.fiverr.com/bossdesigners" target="_blank">Boss Designers</a></p>
+            <span id="siteseal"><script async type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=7SBDBEVteQpxNdn4oQUn2zwuvmw1tJC2V3pAnV8kGyfXnB5pgU9guj55LC6K"></script></span>
+        </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+</html>
