@@ -102,7 +102,7 @@ p, input, button {
   -----*/
   .jumbotron {
     background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
-      url('images/coverPhoto2.jpg') no-repeat center;
+      url('images/coverPhotoSmall.png') no-repeat center;
     background-size: contain;
     height: 600px;
   }
@@ -746,7 +746,7 @@ PORTFOLIO PAGE
     -----*/
     .jumbotron {
       background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
-      url('images/coverPhoto2.jpg') no-repeat center;
+      url('images/coverPhotoLarge.png') no-repeat center;
       background-size: contain;
       height: 600px;
     }
@@ -778,7 +778,7 @@ PORTFOLIO PAGE
       font-size: 1rem !important;
     }
 
-    .up-arrow .fa-arrow-up {
+    .up-arrow .fa-angle-up {
       font-size: 48px;
     }
     .up-arrow {
