@@ -207,6 +207,7 @@ section about
   font-size: 2rem !important;
 }
 
+
 /*-----
 carousel
 -----*/
@@ -522,6 +523,17 @@ PORTFOLIO PAGE
   transform: translateX(-50%);
 }
 
+.modal-dialog {
+  max-width: 90vw;
+}
+
+/* The x button in the modal's
+top right-hand corner.*/
+.close {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
 /*PCB ABOUT SQUARE*/
 
 .front h1 {
@@ -621,8 +633,6 @@ PORTFOLIO PAGE
   height: 40px !important;
 }
 
-/*BACK TO TOP ARROW*/
-
 .modal-footer {
   position: relative;
 }
@@ -637,6 +647,7 @@ PORTFOLIO PAGE
 .color-container {
   position: relative;
   height: 150px;
+  width: 450px;
 }
 .color-circle {
   width: 150px;
@@ -681,8 +692,8 @@ PORTFOLIO PAGE
   transition: .3s;
   margin-bottom: 0 !important;
   width: 150px;
+  font-size: 1.5rem;
   font-weight: 900;
-  font-size: 1.25rem;
 }
 .color-circle:hover p {
   display: block;
@@ -700,9 +711,9 @@ PORTFOLIO PAGE
 }
 
 @media (min-width: 1024px) {
-    /*====================
-    CODE COMMON TO ALL PAGES
-    ====================*/
+  /*====================
+  CODE COMMON TO ALL PAGES
+  ====================*/
 
   .container-fluid {
     max-width: 80% !important;
@@ -720,79 +731,79 @@ PORTFOLIO PAGE
     font-size: 1.5rem;
   }
 
-    /*-----
-    Navbar
-    -----*/
-    .logo-image {
-      width: 113px;
-      height: 75px;
-    }
-    .my-logo h4 {
-      font-size: 2rem;
-    }
-    .navbar {
-      background-color: #EAE7DC;
-    }
-    .nav-link {
-    font-size: 1.5rem;
-    }
-    .nav-link:nth-child(1),
-    .nav-link:nth-child(2),
-    .nav-link:nth-child(3) {
-      margin-right: 50px;
-    }
-    /*-----
-    jumbotron
-    -----*/
-    .jumbotron {
-      background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
-      url('images/coverPhotoLarge.png') no-repeat center;
-      background-size: contain;
-      height: 600px;
-    }
-    .jumbotron-text {
-      color: black;
-    }
-    .jumbotron-text p {
-      font-size: 1.5em;
-    }
-    /*-----
-    section about
-    -----*/
-    #about {
-      margin-bottom: 30px;
-    }
-    .medium-text {
-      font-size: 1.25em;
-    }
-    .greeting {
-      line-height: 2;
-    }
-    .list-image {
-      height: 50px;
-    }
-    .list-group-item p {
-      margin-bottom: 0 !important;
-    }
-    .website-button {
-      font-size: 1rem !important;
-    }
+  /*-----
+  Navbar
+  -----*/
+  .logo-image {
+    width: 113px;
+    height: 75px;
+  }
+  .my-logo h4 {
+    font-size: 2rem;
+  }
+  .navbar {
+    background-color: #EAE7DC;
+  }
+  .nav-link {
+  font-size: 1.5rem;
+  }
+  .nav-link:nth-child(1),
+  .nav-link:nth-child(2),
+  .nav-link:nth-child(3) {
+    margin-right: 50px;
+  }
+  /*-----
+  jumbotron
+  -----*/
+  .jumbotron {
+    background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
+    url('images/coverPhotoLarge.png') no-repeat center;
+    background-size: contain;
+    height: 600px;
+  }
+  .jumbotron-text {
+    color: black;
+  }
+  .jumbotron-text p {
+    font-size: 1.5em;
+  }
+  /*-----
+  section about
+  -----*/
+  #about {
+    margin-bottom: 30px;
+  }
+  .medium-text {
+    font-size: 1.25em;
+  }
+  .greeting {
+    line-height: 2;
+  }
+  .list-image {
+    height: 50px;
+  }
+  .list-group-item p {
+    margin-bottom: 0 !important;
+  }
+  .website-button {
+    font-size: 1rem !important;
+  }
 
-    .up-arrow .fa-angle-up {
-      font-size: 48px;
-    }
-    .up-arrow {
-      width: 55px;
-      height: 55px;
-    }
-    
-    
-    /*-----
-    Modal content
-    -----*/
-    .content-one {
-      width: 500px;
-    }
+  .up-arrow .fa-angle-up {
+    font-size: 48px;
+  }
+  .up-arrow {
+    width: 55px;
+    height: 55px;
+  }
+  
+  
+  /*-----
+  Modal content
+  -----*/
+  .content-one {
+    width: 500px;
+  }
 
   /*-----
   section about
@@ -903,6 +914,13 @@ PORTFOLIO PAGE
     position: relative;
     margin-left: calc(71.81px/2);
   }
+  /* The x button in the modal's
+  top right-hand corner.*/
+  .close {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
   /* .inner-modal-content {
     position: absolute;
     top: 0;
