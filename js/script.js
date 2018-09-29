@@ -16,3 +16,36 @@ $cardFront.click(function () {
 $returnButton.click(function () {
     $cardFront.fadeIn(500);
 });
+
+//link smooth scrolling
+var $aboutLink = $('.nav-item:nth-child(2)');
+var $aboutSection = $('#about');
+var $contactLink = $('.nav-item:nth-child(4)');
+var $contactSection = $('#contact');
+
+$aboutLink.click(function() {
+    $('html, body').animate({scrollTop: $aboutSection.offset().top}, 800);
+    return false;
+});
+
+$contactLink.click(function() {
+    $('html, body').animate({scrollTop: $contactSection.offset().top}, 800);
+    return false;
+});
+
+//smooth scrolling up-arrow
+var $upArrow = $('.up-arrow');
+$upArrow.css('opacity', '0');
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $upArrow.css('opacity', '1').fadeIn();
+    } else {
+        $upArrow.css('opacity', '0').fadeOut();
+    }
+});
+
+$upArrow.click(function() {
+    $('html, body').animate({scrollTop: 0}, 800);
+    return false;
+});

@@ -102,7 +102,7 @@ p, input, button {
   -----*/
   .jumbotron {
     background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
-      url('images/J_HARPER_181a.png') no-repeat center;
+      url('images/coverPhoto2.jpg') no-repeat center;
     background-size: contain;
     height: 600px;
   }
@@ -173,18 +173,27 @@ section about
 #featured {
   background-color: #EAE7DC;
 }
-.up-arrow .fa-arrow-up {
-  font-size: 85px;
+.up-arrow .fa-angle-up {
+  font-size: 40px;
 }
 .up-arrow {
   background-color: rgb(233,128,116);
   color: rgb(234,231,220);
-  width: 125px;
-  height: 125px;
+  width: 80px;
+  height: 80px;
   position: fixed;
   right: 25px;
   bottom: 25px;
   z-index: 1000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.up-arrow i {
+  margin-bottom: 5px;
 }
 .up-arrow:hover {
   text-decoration: none;
@@ -737,7 +746,7 @@ PORTFOLIO PAGE
     -----*/
     .jumbotron {
       background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
-      url('images/J_HARPER_181a.png') no-repeat center;
+      url('images/coverPhoto2.jpg') no-repeat center;
       background-size: contain;
       height: 600px;
     }
@@ -773,8 +782,8 @@ PORTFOLIO PAGE
       font-size: 48px;
     }
     .up-arrow {
-      width: 75px;
-      height: 75px;
+      width: 55px;
+      height: 55px;
     }
     
     
