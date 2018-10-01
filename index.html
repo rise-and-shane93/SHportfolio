@@ -8,12 +8,11 @@
     - Simplify the media queries.
     - Make the media query for medium screens, or 768px.
     - Add jQuery to make the UI experience amazing!
-    - Make the navbar nice/more interactive.
-    - Clean up the color theme for the page.
-    - See why clearfix isn't working on the portfolio page.
     - Fix the modals for multiple images.
     - Possible make the logo smaller so you can make the navbar fixed.
-    - See if you don't have a lot of issues in widening the modal-body.
+    - Add more space between divs, articles and sections.
+    - Make the icons for the mobile device larger. 
+    - Make the div list a smaller width for mobile devices.
 -->
 <html>
 <head>
@@ -62,18 +61,18 @@
             <!--I want my friend Gaffney to take a better headshot of me-->
             </section>
             <section id="about">
-                <h1 class="text-center display-3 mb-5">Thanks for stopping by&#33;</h1>
+                <h1 class="text-center display-3 mb-sm-5 mb-lg-3">Thanks for stopping by&#33;</h1>
                 <div class="container-fluid mt-3">
                     <!-- <div class="greeting d-flex flex-row align-items-center mr-auto"> -->
                     <div class="row mb-5">
                         <div class="col-12 col-lg-8 d-flex align-items-center">
-                            <p class="text-justify medium-text greeting">As a web developer in the metro Atlanta area&#44; I have gotten to know 
+                            <p class="text-justify medium-text greeting mb-5">As a web developer in the metro Atlanta area&#44; I have gotten to know 
                                 many local businesses and meet their website&#44; design &amp; marketing needs.
                                 What satisfies me the most is to see a business or company grow 
                                 &amp; thrive as a result of my contributions to their website and marketing strategy. 
                                 Feel free to shoot me a message if you have any questions or inquiries&#33;</p>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-4 my-5">
                         <!--Not sure why the mobile devices have the medium breakpoint in portrait mode.-->
                             <div class="list-group ml-auto">
                                 <h3 class="text-center">My skillset&#58;</h3>
@@ -104,9 +103,10 @@
                             </div>
                         </div>
                     </div>
+                    <hr>
                     <!--Try to find a way to make a modal that allows you to switch between images.-->
                     <article id="project-slideshow d-flex flex-column justify-content-center align-items-center">
-                        <h2 class="text-center mb-5">Click on any photo below to view some of my projects&#33;</h2>
+                        <h2 class="text-center my-5">Click on any photo below to view some of my projects&#33;</h2>
                         <div class="open-modal d-flex flex-row justify-content-center modal-container">
                             <img src="images/case-study/desktop.png" data-toggle="modal" data-target="#exampleModal"
                              class="img-fluid" alt="A screenshot of Adena Harper's website">
@@ -183,10 +183,10 @@
             </section>
             <section id="featured">
                 <article id="featured-project">
-                    <h2 class="text-center p-4 display-4">Featured Project</h2>
+                    <h2 class="text-center display-4">Featured Project</h2>
                     <div class="container-fluid">
-                        <div class="row pb-5">
-                            <div class="col-12 col-lg-5 d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-12 col-lg-5 d-flex justify-content-center my-5">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -219,7 +219,7 @@
                                 <p>This case study is actually my first&#33; I created the website
                                 for my mom's Mary Kay Unit. I utilized HTML5, CSS3 and Bootstrap to build it.
                                 I hope that you enjoy it&#33;</p>
-                                <a class="btn btn-primary align-self-center" href="featuredProject.html">View Project</a>
+                                <button class="btn btn-danger align-self-center mt-3"><a href="featuredProject.html">View Project</a></button>
                             </div>
                         </div>
                     </div>
@@ -228,8 +228,8 @@
             <section id="contact">
                 <div class="container-fluid">
                     <article id="form-article">
-                        <h2 class="text-center p-4">I want to hear from <strong>you!</strong></h2>
-                        <p class="text-center">Fill out the form below to get in touch with me!<br>
+                        <h2 class="text-center my-4">I want to hear from <strong>you!</strong></h2>
+                        <p class="text-center mb-4">Fill out the form below to get in touch with me!<br>
                       I'm also active on social media so be sure to follow me there too!</p>
                         <form method="post" action="https://formspree.io/cdtharper@gmail.com">
                             <input class="form-control" type="text" name="name" id="name" placeholder = "Name" required />

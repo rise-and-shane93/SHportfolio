@@ -112,7 +112,7 @@ p, input, button {
   .jumbotron-text p {
     font-size: 1.5em;
   }
-   /*-----
+  /*-----
   section about
   -----*/
   #about {
@@ -123,9 +123,10 @@ p, input, button {
     text-align: justify;
   }
   .list-image {
-    height: 50px;
+    height: 125px;
   }
   .list-group-item p {
+    font-size: 3rem;
     margin-bottom: 0 !important;
   }
   /*-----
@@ -167,10 +168,11 @@ p, input, button {
   }
 
 /*-----
-section about
+section featured
 -----*/
 
 #featured {
+  padding: 3rem 0;
   background-color: #EAE7DC;
 }
 .up-arrow .fa-angle-up {
@@ -206,7 +208,19 @@ section about
 .website-button {
   font-size: 2rem !important;
 }
+.website-button:hover {
+  text-decoration: none;
+}
 
+button[href$=".html"] {
+  font-size: 2.5rem;
+}
+button a {
+  color: white !important;
+}
+button a:hover {
+  text-decoration: none;
+}
 
 /*-----
 carousel
@@ -222,6 +236,7 @@ section contact
 
 #contact {
   background-color: white;
+  padding: 30px 0;
 }
 
 /*-----
@@ -244,13 +259,11 @@ contact form
   background-color: white;
   box-shadow: 0px 0px 20px 1px #373737;
 }
-#name,
-#email,
-#subject,
-#message {
+form input,
+form textarea {
 	width: 100%;
 	margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 	padding: 5px;
 	display: block;
   font-family: sans-serif;
@@ -392,7 +405,7 @@ section intro
 }
 
 /*-----
-section intro
+article brainstorming
 -----*/
 .modal-container2 a {
   padding: 10px;
@@ -401,6 +414,13 @@ section intro
 .modal-container2 a:hover {
   transform: scale(1.1);
   transition: .3s;
+}
+.new-website {
+  margin-bottom: 0;
+  color: #E85A4F;
+  border: 2px solid #E85A4F;
+  border-radius: 10px;
+  font-weight: bolder;
 }
 
 /* REQUEST APPOINTMENT ---------------- */
@@ -783,6 +803,7 @@ top right-hand corner.*/
     height: 50px;
   }
   .list-group-item p {
+    font-size: 1.25rem;
     margin-bottom: 0 !important;
   }
   .website-button {
@@ -806,8 +827,16 @@ top right-hand corner.*/
   }
 
   /*-----
-  section about
+  section featured
   -----*/
+  #featured {
+    padding: 0;
+  }
+
+  button[href$=".html"] {
+    font-size: 1rem;
+  }
+  
 
   /*-----
   carousel
@@ -820,7 +849,14 @@ top right-hand corner.*/
   /*-----
   section contact
   -----*/
-
+  #contact {
+    padding: 0;
+  }
+  form input,
+  form textarea {
+    margin-bottom: 1rem;
+  }
+    
   /*-----
   contact form
   -----*/
@@ -987,9 +1023,12 @@ top right-hand corner.*/
   /*REQUEST APPOINTMENT*/
 
   #request {
-    padding: 10px 50px 0px 50px;
+    padding: 10px 0;
     width: 150px;
     height: 150px;  
+  }
+  .fa-calendar {
+    padding: 0 50px;
   }
 
   /*PCB ABOUT SQUARE*/

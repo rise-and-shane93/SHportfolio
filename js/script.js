@@ -49,3 +49,17 @@ $upArrow.click(function() {
     $('html, body').animate({scrollTop: 0}, 800);
     return false;
 });
+
+//new website message
+var $adenaSiteButton = $('#adena-harper');
+var $newSiteMessage = $('.new-website');
+
+$newSiteMessage.hide();
+
+$adenaSiteButton.mouseenter(function(evt) {
+    $newSiteMessage.slideDown();
+});
+
+$adenaSiteButton.mouseout(function(evt) {
+    $newSiteMessage.slideUp();
+})
