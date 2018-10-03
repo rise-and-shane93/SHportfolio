@@ -60,6 +60,10 @@ $adenaSiteButton.mouseenter(function(evt) {
     $newSiteMessage.slideDown();
 });
 
+$adenaSiteButton.click(function(event) {
+    event.preventDefault();
+})
+
 $adenaSiteButton.mouseout(function(evt) {
     $newSiteMessage.slideUp();
 })
