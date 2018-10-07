@@ -227,7 +227,7 @@ carousel
 -----*/
 
 .carousel {
-  width: 75%;
+  width: 90%;
 }
 
 /*-----
@@ -727,10 +727,18 @@ top right-hand corner.*/
   /* .container {
     max-width: 720px;
   } */
+  /*====================
+  HOME PAGE
+  ====================*/
+
+  /*-----
+  section about
+  -----*/
+
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   /*====================
   CODE COMMON TO ALL PAGES
   ====================*/
@@ -800,7 +808,8 @@ top right-hand corner.*/
     line-height: 2;
   }
   .list-image {
-    height: 50px;
+    width: 15%;
+    height: auto;
   }
   .list-group-item p {
     font-size: 1.25rem;
