@@ -8,7 +8,7 @@ Here are the colors:
 #E85A4F rgb(232,90,79) Jelly Bean Red
 */
 
-/* This is for the large media query */
+/* This is for the small media query */
 
 * {
   box-sizing: border-box;
@@ -63,109 +63,109 @@ p, input, button {
 }
 
 /*====================
-  CODE COMMON TO ALL PAGES
-  ====================*/
+CODE COMMON TO ALL PAGES
+====================*/
 
-  .container {
-    max-width: 90%;
-  }
+.container {
+  max-width: 90%;
+}
 
-  /*-----
-  Navbar
-  -----*/
-  .light-red-text {
-    color: #E85A4F;
-  }
-  /*-----
-  Navbar
-  -----*/
-  .logo-image {
-    width: 200px;
-    height: 133px;
-  }
-  .my-logo h4 {
-    font-size: 3rem;
-  }
-  .navbar {
-    background-color: #EAE7DC;
-  }
-  .navbar-toggler-icon {
-    width: 3.5em !important;
-    height: 3.5em !important;
-  }
-  .nav-link {
-    text-align: right;
-    font-size: 3.5rem;
-  }
-  /*-----
-  jumbotron
-  -----*/
-  .jumbotron {
-    background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
-      url('images/coverPhotoSmall.png') no-repeat center;
-    background-size: contain;
-    height: 600px;
-  }
-  .jumbotron-text {
-    color: black;
-  }
-  .jumbotron-text p {
-    font-size: 1.5em;
-  }
-  /*-----
-  section about
-  -----*/
-  #about {
-    margin-bottom: 30px;
-  }
-  .greeting p {
-    width: 65%;
-    text-align: justify;
-  }
-  .list-image {
-    height: 125px;
-  }
-  .list-group-item p {
-    font-size: 3rem;
-    margin-bottom: 0 !important;
-  }
-  /*-----
-  Modal content
-  -----*/
-  .modal-container,
-  .modal-container2 {
-    background: black;
-    border: 10px solid #D8C3A5;
-    border-radius: 10px;
-  }
-  .modal-container,
-  .modal-container2 {
-    height: 200px;
-  }
-  .modal-container img,
-  .modal-container2 {
-    padding: 20px;
-  }
-  .modal-container img:nth-child(1),
-  .modal-container img:nth-child(2),
-  .modal-container img:nth-child(3) {
-    transition: .3s;
-  }
-  .modal-container img:nth-child(1) {
-    width: calc(180px * 1.433);
-  }
-  .modal-container img:nth-child(2) {
-    width: calc(180px * 0.647);
-  }
-  .modal-container img:nth-child(3) {
-    width: calc(180px * 1.604);
-  }
-  .modal-container img:nth-child(1):hover,
-  .modal-container img:nth-child(2):hover,
-  .modal-container img:nth-child(3):hover {
-    transform: scale(1.1);
-    transition: .3s;
-  }
+/*-----
+Navbar
+-----*/
+.light-red-text {
+  color: #E85A4F;
+}
+/*-----
+Navbar
+-----*/
+.logo-image {
+  width: 200px;
+  height: 133px;
+}
+.my-logo h4 {
+  font-size: 3rem;
+}
+.navbar {
+  background-color: #EAE7DC;
+}
+.navbar-toggler-icon {
+  width: 3.5em !important;
+  height: 3.5em !important;
+}
+.nav-link {
+  text-align: right;
+  font-size: 3.5rem;
+}
+/*-----
+jumbotron
+-----*/
+.jumbotron {
+  background: linear-gradient(rgba(216,195,165, 0.5), rgba(216,195,165, 0.5)),
+    url('images/coverPhotoSmall.png') no-repeat center;
+  background-size: contain;
+  height: 600px;
+}
+.jumbotron-text {
+  color: black;
+}
+.jumbotron-text p {
+  font-size: 1.5em;
+}
+/*-----
+section about
+-----*/
+#about {
+  margin-bottom: 30px;
+}
+.greeting p {
+  width: 65%;
+  text-align: justify;
+}
+.list-image {
+  height: 125px;
+}
+.list-group-item p {
+  font-size: 3rem;
+  margin-bottom: 0 !important;
+}
+/*-----
+Modal content
+-----*/
+.modal-container,
+.modal-container2 {
+  background: black;
+  border: 10px solid #D8C3A5;
+  border-radius: 10px;
+}
+.modal-container,
+.modal-container2 {
+  height: 200px;
+}
+.modal-container img,
+.modal-container2 {
+  padding: 20px;
+}
+.modal-container img:nth-child(1),
+.modal-container img:nth-child(2),
+.modal-container img:nth-child(3) {
+  transition: .3s;
+}
+.modal-container img:nth-child(1) {
+  width: calc(180px * 1.433);
+}
+.modal-container img:nth-child(2) {
+  width: calc(180px * 0.647);
+}
+.modal-container img:nth-child(3) {
+  width: calc(180px * 1.604);
+}
+.modal-container img:nth-child(1):hover,
+.modal-container img:nth-child(2):hover,
+.modal-container img:nth-child(3):hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
 
 /*-----
 section featured
@@ -378,13 +378,12 @@ footer
 
 footer {
   background-color: #EAE7DC;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 footer p {
   margin: 15px;
+}
+footer div {
+  width: 100%;
 }
 
 /*====================
