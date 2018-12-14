@@ -25,7 +25,7 @@
 </head>
 <body>
         <header id="top">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container-fluid">
                     <div class="my-logo d-inline-flex flex-row align-items-center justify-content-center mr-auto">
                         <img src="images/logo/logo8.png" class="logo-image" alt="My initials SH on a laptop screen">
@@ -38,16 +38,19 @@
                     <!--The pull-right class makes the dropdown menu align right. You'll probably have
                     to use CSS to right align the individual nav items.-->    
                         <div class="navbar-nav ml-auto pull-right">
-                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">About</a>
-                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                            <a class="nav-item nav-link" href="#">Contact</a>
+                            <a class="nav-item nav-link active" href="#welcome">Home<!--<span class="sr-only">(current)</span>--></a>
+                            <a class="nav-item nav-link" href="#about">About</a>
+                            <a class="nav-item nav-link" href="#featured">Portfolio</a>
+                            <a class="nav-item nav-link" href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
+            <div class="spacer">
+                <p>Hello world</p>
+            </div>
             <section id="welcome">
             <div class="jumbotron">
                 <!-- <img src="images/coverPhoto.jpg" alt="A headshot of Shane and his laptop"
@@ -232,13 +235,13 @@
                         <h2 class="text-center my-4">I want to hear from <strong>you!</strong></h2>
                         <p class="text-center mb-4">Fill out the form below to get in touch with me!<br>
                       I'm also active on social media so be sure to follow me there too!</p>
-                        <form method="post" action="https://formspree.io/cdtharper@gmail.com">
-                            <input class="form-control" type="text" name="name" id="name" placeholder = "Name" required />
-                            <input class="form-control" type="email" name="email" id="email" placeholder = "Email" required />
-                            <input class="form-control" type="text" name="subject" id="subject" placeholder = "Subject"/>
-                            <textarea class="form-control" name="message" id="message" rows="7" placeholder="Message"></textarea>
+                        <form method="post" action="contact-process.php">
+                            <input class="form-control" type="text" name="contact_name" id="name" placeholder = "Name" required />
+                            <input class="form-control" type="email" name="contact_email" id="email" placeholder = "Email" required />
+                            <!-- <input class="form-control" type="text" name="contact_subject" id="subject" placeholder = "Subject"/> -->
+                            <textarea class="form-control" name="contact_message" id="message" rows="7" placeholder="Message"></textarea>
                   <!--Try to get the margins to work. Ask if this is a good layout or float the first two input elements.-->
-                        <button type="submit" name="submit" class="btn btn-block btn-submit mb-1">
+                        <button type="submit" name="contact_form_submit" class="btn btn-block btn-submit mb-1">
                             Submit!
                         </button>
                         <button type="button" class="btn btn-block disabled btn-outline-success">Form Submitted&#33;</button>
