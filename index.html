@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <!--This is the index file for the 2019update branch-->
+<!--Tasks for 2019update branch:
+=================================
+- Make the margin & padding consistent.
+- Make the navbar scroll to individual sections of the page instead of separate pages.
+- Fix the PHP contact form (get Daniel's help)
+- Add more text in the welcome paragraph. ++
+- Change your location to Baltimore, MD. ++ 
+- Make the logo a link the home page ++
+- Add a privacy policy to the website.
+- Make a more stylish lightbox for your example projects.
+- Add more projects to your portfolio page.
+- Add your updated resume to the bottom of the page. ++
+- Fix the footer's layout. ++
+- Have a more stylish text for the logo. ++ 
+=================================-->
 <html>
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Reem+Kufi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Reem+Kufi|Thasadith">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">    
@@ -13,10 +28,13 @@
         <header id="top">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container-fluid">
-                    <div class="my-logo d-inline-flex flex-row align-items-center justify-content-center mr-auto">
-                        <img src="images/logo/logo8.png" class="logo-image" alt="My initials SH on a laptop screen">
-                        <h4>Shane<br>Harper</h4>
-                    </div>
+                    <a href="index.html">
+                        <!--In the href you will put https://www.shanecharper.com/home-->
+                        <div class="my-logo d-inline-flex flex-row align-items-center justify-content-center mr-auto">
+                            <img src="images/logo/logo8.png" class="logo-image" alt="My initials SH on a laptop screen">
+                            <h4>Shane<br>Harper</h4>
+                        </div>        
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,8 +61,8 @@
                 title="Shane Harper" class="jumbo-image"> -->
                 <div class="jumbotron-text">
                     <h1 class="display-3 text-center">Hey everyone&#33;</h1>
-                    <p class="lead text-center">My name is Shane Harper and I am a web developer
-                        based out of Atlanta&#44; GA.</p>
+                    <p class="text-center">My name is Shane Harper and I am a web developer
+                        based out of Baltimore&#44; MD.</p>
                 </div>
             </div>
             <!--I want my friend Gaffney to take a better headshot of me-->
@@ -56,11 +74,12 @@
                     <!-- <div class="greeting d-flex flex-row align-items-center mr-auto"> -->
                     <div class="row mb-5">
                         <div class="col-12 col-lg-8 d-flex align-items-center">
-                            <p class="text-justify medium-text greeting mb-5">As a web developer in the metro Atlanta area&#44; I have gotten to know 
-                                many local businesses and meet their website&#44; design &amp; marketing needs.
+                            <p class="text-justify medium-text greeting mb-5">As a web developer in the Baltimore&#47;DC area&#44; I have gotten to know 
+                                many local businesses and meet their website&#44; design &amp; marketing needs. To ensure our clients' success,
+                                we utilize the latest technologies and practices in web development to create modern, responsive and dynamic websites.
                                 What satisfies me the most is to see a business or company grow 
                                 &amp; thrive as a result of my contributions to their website and marketing strategy. 
-                                Feel free to shoot me a message if you have any questions or inquiries&#33;</p>
+                                Feel free to shoot me a message if you have any questions or inquiries&#33; I would be more than happy to assist you&#33;</p>
                         </div>
                         <div class="col-12 col-lg-4 my-5">
                         <!--Not sure why the mobile devices have the medium breakpoint in portrait mode.-->
@@ -255,17 +274,14 @@
                 </div>
             </section>
         </main>
-        
-        <footer class="d-flex flex-column">
-            <div class="d-flex flex-row align-items-center justify-content-center">
-                <p>&copy;Shane Harper, 2018</p>
-                <p>Logo Courtesy of <a href="https://www.fiverr.com/bossdesigners" target="_blank">Boss Designers</a></p>
-            </div>
-            <div class="d-flex flex-row align-items-center justify-content-center">
-                <p><a href="ShaneResume.pdf" target="_blank">View Resume</a></p>
-                <p><a href="mailto:sharper@webmarketsol.com">sharper@webmarketsol.com</a></p>        
-                <span id="siteseal"><script async type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=7SBDBEVteQpxNdn4oQUn2zwuvmw1tJC2V3pAnV8kGyfXnB5pgU9guj55LC6K"></script></span>        
-            </div>
+        <footer class="d-flex flex-row justify-content-space-between">
+            <p>
+                &copy;Shane Harper, 2018<span class="vl"></span>
+                <a href="ShaneResume.pdf" target="_blank">View Resume</a><span class="vl"></span>
+                <a href="mailto:sharper@webmarketsol.com">sharper@webmarketsol.com</a><span class="vl"></span>       
+                Logo Courtesy of <a href="https://www.fiverr.com/bossdesigners" target="_blank">Boss Designers</a>
+            </p>
+            <span id="siteseal" style="margin: 20px;"><script async type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=7SBDBEVteQpxNdn4oQUn2zwuvmw1tJC2V3pAnV8kGyfXnB5pgU9guj55LC6K"></script></span>
         </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.js"></script>

@@ -156,7 +156,7 @@ $(window).scroll(function(e) {
     $(event.target).toggleClass('active');
 });
 */
-
+/*
 $homeLink.click(function() {
     $('html, body').animate({scrollTop: 0}, 800);
     return false;
@@ -172,8 +172,8 @@ $contactLink.click(function() {
     $('html, body').animate({scrollTop: $contactSection.offset().top-130}, 800);
     return false;
 });
+*/
 
-/*
 var sections = $('section')
   , nav = $('.navbar-nav')
   , navbar = $('.navbar')
@@ -203,7 +203,7 @@ nav.find('a').on('click', function () {
    
     return false;
   });
-*/
+
 //smooth scrolling up-arrow
 var $upArrow = $('.up-arrow');
 $upArrow.css('opacity', '0');
